@@ -8,12 +8,12 @@ const Navbar = () => {
             </NavLink>
             <nav className="flex text-lg gap-10 font-medium">
                 <NavLink to="/about" className={({ isActive }) => isActive ?
-                    'text-blue-500' : 'text-black hover:border-blue-500 hover:rounded hover:bg-orange-300 hover:border-solid hover:border-1'}
+                    'text-blue-500' : 'text-black hover:border-blue-500 hover:rounded hover:bg-gray-300 hover:border-solid hover:border-1'}
                 >
                     About
                 </NavLink>
                 <NavLink to="/projects" className={({ isActive }) => isActive ?
-                    'text-blue-500' : 'text-black hover:border-blue-500 hover:rounded hover:bg-orange-300 hover:border-solid hover:border-1'}
+                    'text-blue-500' : 'text-black hover:border-blue-500 hover:rounded hover:bg-gray-300 hover:border-solid hover:border-1'}
                 >
                     Projects
                 </NavLink>
