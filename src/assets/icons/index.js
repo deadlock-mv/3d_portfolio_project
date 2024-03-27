@@ -26,6 +26,23 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import tripadvisor from './tripadvisor.svg'
+import shirt from './shirt.svg'
+import food from './food.svg'
+import selenium from './selenium.svg'
+import docker from './docker.svg'
+import aws from './aws.svg'
+import bootstrap from './bootstrap.svg'
+import python from './python.svg'
+import django from './django.svg'
+import sql from './sql.svg'
+import framer from './framer.svg'
+import threejs from './threejs.svg'
+import angular from './angular.svg'
+import cognizant from './cognizant.svg'
+import inmovidu from './inmovidu.svg'
+import medplus from './medplus.svg'
+import instagram from './instagram.svg'
 
 export {
     css,
@@ -55,5 +72,22 @@ export {
     arrow,
     contact,
     soundon,
-    soundoff
+    soundoff,
+    tripadvisor,
+    shirt,
+    food,
+    selenium,
+    django,
+    python,
+    sql,
+    docker,
+    aws,
+    bootstrap,
+    threejs,
+    framer,
+    angular,
+    cognizant,
+    inmovidu,
+    medplus,
+    instagram,
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import { experiences, skills } from '../constants'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css';
+import CTA from '../components/CTA';
 
 const About = () => {
   return (
@@ -14,7 +15,8 @@ const About = () => {
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>Software Engineer based in India, specializing in
           technical education through hands-on learning and building
-          applications.
+          applications.Experienced in both frontend and backend development,
+          adept at creating responsive and intuitive user interfaces.
         </p>
       </div>
 
@@ -30,6 +32,7 @@ const About = () => {
                 <img
                   src={skill.imageUrl}
                   alt={skill.name}
+                  title={skill.name}
                   className="w-1/2 h-1/2 object-contain"
                 />
               </div>
@@ -55,10 +58,9 @@ const About = () => {
               <VerticalTimelineElement
                 key={experience.company_name}
                 date={experience.date}
-                iconStyle={{ background: experience.iconBg }}
-                iconOnClick={
-                  <div className="flex justify-center items-center 
-                    w-full h-full">
+                iconStyle={{ background: experience.iconBg}}
+                icon={
+                  <div className="flex justify-center items-center w-full h-full">
                     <img
                       src={experience.icon}
                       alt={experience.company_name}
@@ -66,23 +68,23 @@ const About = () => {
                     />
                   </div>
                 }
-                contentStyle={{
-                  borderBottom: '8px',
+                contentStyle={{ 
+                  borderBottom: '8px', 
                   borderStyle: 'solid',
                   borderBottomColor: experience.iconBg,
-                  boxShadow: "none",
+                  boxShadow: 'none',
                 }}
               >
                 <div>
-                  <h3 className="text-black text-xl font-poppins
+                  <h3 className="green-gradient_text text-xl font-poppins
                     font-semibold">
-                      {experience.title}
-                    </h3>
-                    <p className="text-black-500 font-medium text-base"
-                      style={{marign:0}}
-                    >
-                        {experience.company_name}
-                    </p>
+                    {experience.title}
+                  </h3>
+                  <p className="text-black-500 font-medium text-base"
+                    style={{ marign: 0 }}
+                  >
+                    {experience.company_name}
+                  </p>
                 </div>
 
                 <ul className="my-5 list-disc ml-5 space-y-2">
@@ -91,7 +93,7 @@ const About = () => {
                       key={`experience-point-${index}`}
                       className="text-black-500/50 font-normal pl-1 text-sm"
                     >
-                        {point}
+                      {point}
                     </li>
                   ))}
                 </ul>
@@ -101,6 +103,9 @@ const About = () => {
           </VerticalTimeline>
         </div>
       </div>
+
+      <hr className="border-slate-200" />
+      <CTA />
     </section>
   )
 }
