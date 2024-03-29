@@ -1,6 +1,6 @@
 <div align='center'>
 
-<img src=https://github.com/deadlock-mv/3d_portfolio_project/blob/master/public/Site_demo.png alt="logo" width=1680 height=800 />
+<img src=https://github.com/deadlock-mv/3d_portfolio_project/blob/master/public/Site_demo.png alt="logo" width=1280 height=800 />
 
 <h1>3D Portofolio Project</h1>
 <p>A 3-D interactive project which showcases my skills, my projects, my experiences along with the ability to contact via mail service.</p>
